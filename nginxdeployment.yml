@@ -5,7 +5,7 @@ metadata:
     environment: testapp
   name: testdeploy
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       environment: testapp
@@ -21,5 +21,5 @@ spec:
         environment: testapp
     spec:
       containers:
-      - image: nginx:1.17
+      - image: nginx:1.16
         name: nginx
